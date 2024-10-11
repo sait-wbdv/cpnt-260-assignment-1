@@ -48,4 +48,12 @@
     grid-template: 1fr / repeat(5, 1fr);
     grid-template-areas: 'first second third fourth fifth';
   }
+
+  .grow-on-hover {
+    transition: transform 0.5s ease;
+  }
+
+  .grow-on-hover:hover {
+    transform: scale(1.1);
+  }
 }
