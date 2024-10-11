@@ -19,10 +19,15 @@
 }
 
 .testimonial-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: azure;
   text-align: center;
   padding: 20px;
 }
+
 
 .testimonial-card img {
   width: 120px;
