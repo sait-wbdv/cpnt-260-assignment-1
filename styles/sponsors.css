@@ -1,8 +1,21 @@
+.sponsors {
+  max-width: 800px;
+}
+.sponsors {
+  display: flex;
+  flex-direction: column;
+}
+.sponsors img {
+  width: 250px;
+  height: auto;
+}
 .sponsors-grid {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, 1fr);
 }
+
+/* Tablet sizes */
 
 @media screen and (min-width: 728px) {
   .sponsors-grid {
@@ -10,6 +23,8 @@
     grid-template-rows: repeat(3, 1fr);
   }
 }
+
+/* Desktop sizes */
 
 @media screen and (min-width: 1025px) {
   .sponsors-grid {
