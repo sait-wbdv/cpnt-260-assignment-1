@@ -1,0 +1,117 @@
+/* Mobile */
+.hero {
+    display: grid;
+    height: 100vh;
+    background: linear-gradient(pink, blueviolet);
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+h1 {
+    font-size: 34px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: beige;
+    text-shadow: 2px 2px 8px burlywood;
+    margin: 16px;
+}
+
+p {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: beige;
+    text-shadow: 2px 2px 8px burlywood;
+    margin: 16px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 16px 24px;
+    background: linear-gradient(purple, indigo);
+    color: beige;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 50px;
+}
+
+.cta-button:hover {
+    background: violet;
+    font-weight: bold;
+}
+
+/* Tablet */
+@media screen and (min-width: 425px) and (max-width: 1024px) {
+    h1 {
+        font-size: 42px;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+        color: beige;
+        text-shadow: 2px 2px 8px burlywood;
+        margin: 24px;
+    }
+    
+    p {
+        font-size: 26px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: beige;
+        text-shadow: 2px 2px 8px burlywood;
+        margin: 24px;
+    }
+    
+    .cta-button {
+        display: inline-block;
+        padding: 20px 28px;
+        background-color: linear-gradient(purple, indigo);
+        color: beige;
+        text-decoration: none;
+        font-size: 26px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 50px;
+    }   
+    
+    .cta-button:hover {
+        background: violet;
+        font-weight: bold;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) and (max-width: 2560px) {
+    h1 {
+        font-size: 48px;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+        color: beige;
+        text-shadow: 2px 2px 8px burlywood;
+        margin: 30px;
+    }
+    
+    p {
+        font-size: 32px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: beige;
+        text-shadow: 2px 2px 8px burlywood;
+        margin: 30px;
+    }
+    
+    .cta-button {
+        display: inline-block;
+        padding: 24px 32px;
+        background: linear-gradient(purple, indigo);
+        color: beige;
+        text-decoration: none;
+        font-size: 32px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 50px;
+    }    
+
+    .cta-button:hover {
+        background: violet;
+        font-weight: bold;
+    }
+}
