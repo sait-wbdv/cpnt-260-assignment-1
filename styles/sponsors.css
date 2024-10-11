@@ -3,9 +3,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1000px;
   margin-top: 12px;
   margin-bottom: 24px;
+  width: 100vh;
 }
 .sponsors h2 {
   font-family: 'Times New Roman', Times, serif;
@@ -23,6 +23,18 @@
     'third'
     'fourth'
     'fifth';
+}
+.sponsor-card4 {
+  grid-area: fourth;
+}
+.sponsor-card3 {
+  grid-area: third;
+}
+.sponsor-card2 {
+  grid-area: second;
+}
+.sponsor-card1 {
+  grid-area: first;
 }
 
 /* Tablet sizes */
