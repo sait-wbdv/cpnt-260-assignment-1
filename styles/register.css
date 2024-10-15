@@ -1,11 +1,19 @@
-/* Registration section */
+/* Mobile design */
+
+/* Registration section 8 & 7 might need to go */
 .register {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
   background: rgb(255, 255, 255);
+  background-image: linear-gradient(rgb(0, 110, 255), rgb(255, 0, 191));
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  max-width: 800px;
+  max-width: 600px;
   width: 100%;
   padding: 20px;
+  margin: 0 auto;
 }
 
 /* Heading */
@@ -14,24 +22,22 @@
   text-align: center;
 }
 
-/* Form styles */
+/* Form styles 28 might need to go */
 .registration-form {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 15px;
+  gap: 20px;
+  width: 100%;
 }
 
-/* Form group styles */
+/* Form group styles 36 might need to go */
 .form-group {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
 }
 
-/* .label {
-  margin-bottom: 5px;
-  font-weight: bold;
-} */
-
+/* Individual boxes */
 input {
   padding: 10px;
   border: 1px solid #ccc;
@@ -53,23 +59,64 @@ input {
   background-color: #0056b3;
 }
 
-/* Responsive design */
-@media (min-width: 600px) {
-  .registration-form {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .form-group {
-    flex-direction: row;
+/* Desktop design */
+@media (min-width: 1024px) {
+  /* Registration section */
+  .register {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
     align-items: center;
+    background: rgb(255, 255, 255);
+    background-image: linear-gradient(rgb(0, 110, 255), rgb(255, 0, 191));
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 768px;
+    width: 100vw;
+    padding: 20px;
+    margin: 0 auto;
   }
 
-  .form-group label {
-    margin-right: 10px;
-    flex-basis: 30%; /* Adjust the width of the label */
+  /* Heading */
+  .register h2 {
+    margin-bottom: 20px;
+    text-align: center;
   }
 
-  .form-group input {
-    flex-basis: 70%; /* Adjust the width of the input */
+  /* Form styles */
+  .registration-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+  }
+
+  /* Form group styles */
+  .form-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Individual boxes */
+  input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  /* Submit button */
+  .submit-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .submit-button:hover {
+    background-color: #0056b3;
   }
 }
