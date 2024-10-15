@@ -19,7 +19,7 @@
   display: grid;
   grid-template-areas: 'time-slot';
   grid-template-columns: 1fr;
-  /* grid-template-rows: repeat (4fr, 1); */
+  /*grid-template-rows: repeat (4fr, 1);*/
   gap: 50px;
   justify-content: center;
   text-align: center;
