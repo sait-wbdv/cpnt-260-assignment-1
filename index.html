@@ -8,10 +8,13 @@
       src="https://kit.fontawesome.com/ff0b310edb.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" type="text/css" href="styles/speakers.css" />
     <link rel="stylesheet" type="text/css" href="styles/hero.css" />
     <link rel="stylesheet" type="text/css" href="styles/reset.css" />
+    <link rel="stylesheet" type="text/css" href="styles/footer.css" />
+    <link rel="stylesheet" type="text/css" href="styles/heading.css" />
     <link rel="stylesheet" href="styles/location.css" />
-    <link rel="stylesheet" type="text/css" href="styles/sponsors.css">
+    <link rel="stylesheet" type="text/css" href="styles/sponsors.css" />
     <title>Responsive CSS with Flexbox and Grid</title>
   </head>
   <body>
@@ -26,6 +29,10 @@
           <li class="nav-item"><a href="">Sponsors</a></li>
         </ul>
         <!-- Use this nav list to display for mobile -->
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
         <ul class="nav-list-mobile">
           <li class="nav-item-mobile">
             <a href=""
@@ -67,28 +74,28 @@
         </div>
         <div class="speaker-card">
           <img src="images/speakers/two.jpg" alt="Speaker 1" />
-          <h3>Speaker 1</h3>
-          <p>Expert in AI</p>
+          <h3>Speaker 2</h3>
+          <p>Front End Developer</p>
         </div>
         <div class="speaker-card">
           <img src="images/speakers/three.jpg" alt="Speaker 1" />
-          <h3>Speaker 1</h3>
-          <p>Expert in AI</p>
+          <h3>Speaker 3</h3>
+          <p>Web Designer</p>
         </div>
         <div class="speaker-card">
           <img src="images/speakers/four.jpg" alt="Speaker 1" />
-          <h3>Speaker 1</h3>
-          <p>Expert in AI</p>
+          <h3>Speaker 4</h3>
+          <p>Full Stack Developer</p>
         </div>
         <div class="speaker-card">
           <img src="images/speakers/five.jpg" alt="Speaker 1" />
-          <h3>Speaker 1</h3>
-          <p>Expert in AI</p>
+          <h3>Speaker 5</h3>
+          <p>UI Designer</p>
         </div>
         <div class="speaker-card">
           <img src="images/speakers/six.jpg" alt="Speaker 1" />
-          <h3>Speaker 1</h3>
-          <p>Expert in AI</p>
+          <h3>Speaker 6</h3>
+          <p>UX designer</p>
         </div>
       </div>
     </section>
@@ -231,7 +238,10 @@
           120 Ninth Avenue SE <br />
           Calgary Alberta <br />Canada T2G 0P3
           <br />
-          <a class="address-link" href="https://calgary-convention.com/"
+          <a
+            class="address-link"
+            href="https://calgary-convention.com/"
+            target="_blank"
             >Website</a
           >
         </p>
@@ -252,22 +262,24 @@
     </section>
 
     <footer class="footer">
-      <div class="footer-content">
-        <div class="social-media">
-          <a href=""
-            ><img src="images/socials/facebook.jpeg" alt="Facebook"
-          /></a>
-          <a href=""><img src="images/socials/twitter.png" alt="Twitter" /></a>
-          <a href=""
-            ><img src="images/socials/instagram.png" alt="Instagram"
-          /></a>
-          <a href=""
-            ><img src="images/socials/linkedln.png" alt="LinkedIn"
-          /></a>
-        </div>
-        <div class="footer-info">
-          <p>&copy; 2024 Tech Conference. All rights reserved.</p>
-        </div>
+      <!-- <div class="footer-content"> -->
+      <div class="social-media">
+        <a href="https://www.facebook.com/" target="_blank"
+          ><img src="images/socials/facebook.jpeg" alt="Facebook"
+        /></a>
+        <a href="https://x.com/" target="_blank"
+          ><img src="images/socials/twitter.png" alt="Twitter"
+        /></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><img src="images/socials/instagram.png" alt="Instagram"
+        /></a>
+        <a href="https://www.linkedin.com/" target="_blank"
+          ><img src="images/socials/linkedln.png" alt="LinkedIn"
+        /></a>
+        <!-- </div> -->
+      </div>
+      <div class="footer-info">
+        <p>&copy; 2024 Tech Conference. All rights reserved.</p>
       </div>
     </footer>
   </body>
