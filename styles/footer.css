@@ -13,13 +13,11 @@
   height: 35px;
 }
 
-.footer-content {
-  /* display: grid; */
+/* .footer-content {
+
   text-align: center;
-  /* max-width: 1200px; */
-  /* margin: auto; */
-  /* grid-template-columns: 1fr; */
-}
+
+} */
 
 .social-media {
   display: flex;
@@ -34,7 +32,7 @@
   justify-content: center;
   align-items: center;
 }
-
+/* tablet */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .footer {
     display: grid;
